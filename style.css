@@ -1,56 +1,306 @@
-*{
-    padding:0px;
-    margin:0px;
+/*  I can't develop this code anymore
+	because I don't get enough free time from my
+	freelancing and studies, So if anyone wants to
+	further, develop this code, you may do it 
+	just mention me somewhere*/
+body {
+	margin:0px;
+	padding:0px;
+	font-family: 'Varela Round', sans-serif;
+	background-color:#212121;
+	overflow-x:hidden ;
 }
-#msgarea{
-    height:88%;
-    width:100%;
-    overflow:scroll;
-    float:top;
-    position:absolute ;
+#msgarea
+{
+	margin:0px;
+	width:100%;
+	height:92%;
+	position:absolute;
+	overflow:scroll;
 }
-.send{
-    background-color:#ddd;
-    border-radius:15px;
-    float:right;
-    clear:both;
-    margin-bottom:5px;
-    padding:1px;
-    display:table;
+#controls
+{
+  margin:0px;  
+  height:8%;
+  width:100%;
+  position:absolute;
+  bottom:0px;
+  overflow:hidden;
+  background-color:purple;
 }
-pre{
-    margin:5px;
+#snd
+{
+margin:0px;
+padding:0px;
+width:18%;
+height:100%;
+border:none;
 }
-.rec{
-    background-color:red;
-    text-align:left;
-  /*  box-shadow:1px 1px 2px grey;*/
-    border-radius:15px;
-    clear:both;
-    float:left;
-    display:table;
-    margin-bottom:5px;
+#msgbox
+{
+	margin:0px;
+	padding:0px;
+	height:100%;
+	width:100%;
+	font-family: 'Varela Round', sans-serif;
+
 }
-textarea{
-  /*border-radius:15px;*/
-    width:80%;
-    height:40px;
-    border-color:blue;
-  /*  padding-top:10px;*/
-  text-align:center;
-    position:absolute;
-    outline:none;
-    bottom:1px;
+.recfrst
+{
+	background-color:#424242;
+	height:30px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-left:5px;
+	border-radius:15px 15px 15px 5px;
+	margin-top:5px;
+	float:left;
+	clear:both;
+	display:table;
+	box-shadow:0px 0px 20px black;
 }
-button{
-    /*border-radius:15px;*/
-    height:42px;
-    background-color:green;
-    border-color:fuchsia;
-    position:absolute;
-    outline:none;
-    width:20%;
-    border:none;
-    bottom:1px;
-    right:0px;
+.rec
+{
+   background-color:#424242;
+   margin-left:5px;
+	height:30px;
+	padding-left:10px;
+	padding-right:10px;
+	border-radius:15px;
+	margin-top:5px;
+	box-shadow:0px 0px 20px black;
+	float:left;
+	clear:both;
+	display:table;
+}
+.recfrst pre
+{
+	text-align:left;
+	padding-top:8px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:8px;
+	vertical-align:middle;
+	margin:auto;
+	color:White;
+}
+
+.rec pre
+{
+	text-align:left;
+	padding-top:8px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:8px;
+	vertical-align:middle;
+	margin:auto;
+	color:white;
+}
+
+.recmid
+{
+   background-color:#424242;
+	height:30px;
+	margin-left:5px;
+	padding-left:10px;
+	padding-right:10px;
+	border-radius:5px 15px 15px 5px;
+	margin-top:1px;
+	box-shadow:0px 0px 20px black;
+	float:left;
+	clear:both;
+	display:table;
+}
+.recmid pre
+{
+	text-align:left;
+	padding-top:8px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:8px;
+	vertical-align:middle;
+	margin:auto;
+	color:white;
+}
+
+.reclast
+{
+	background-color:#424242;
+	height:30px;
+	margin-left:5px;
+	padding-left:10px;
+	padding-right:10px;
+	border-radius:5px 15px 15px 15px;
+	margin-top:1px;
+	box-shadow:0px 0px 20px black;
+	float:left;
+	clear:both;
+	display:table;
+}
+.reclast pre
+{
+	text-align:left;
+	padding-top:8px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:8px;
+	vertical-align:middle;
+	margin:auto;
+	color:white;
+}
+.reclast a
+{
+	color:#C3073F;
+}
+.recmid a
+{
+	color:#C3073F;
+}
+.rec a
+{
+	color:#C3073F;
+}
+.recfrst a
+{
+	color:#C3073F;
+}
+
+.snd
+{
+	background-color:#C3073F;
+	height:30px;
+	margin-right:5px;
+	border-radius:15px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:3px;
+	box-shadow:0px 0px 20px black;
+	float:right;
+	clear:both;
+	display:table;
+}
+.snd pre
+{
+	text-align:left;
+	padding-top:8px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:8px;
+	vertical-align:middle;
+	margin:auto;
+	color:white;
+}
+.sndlast
+{
+	background-color:#C3073F;
+	height:30px;
+	margin-right:5px;
+	border-radius:15px 5px 15px 15px;
+	margin-top:1px;
+	float:right;
+	padding-left:10px;
+	padding-right:10px;
+	box-shadow:0px 0px 20px black;
+	clear:both;
+	display:table;
+}
+.sndlast pre
+{
+	text-align:left;
+	padding-top:8px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:8px;
+	vertical-align:middle;
+	margin:auto;
+	color:white;
+}
+.sndmid
+{
+	background-color:#C3073F;
+	height:30px;
+	margin-right:5px;
+	border-radius:15px 5px 5px 15px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:1px;
+	box-shadow:0px 0px 20px black;
+	float:right;
+	clear:both;
+	display:table;
+}
+.sndmid pre
+{
+	text-align:left;
+	padding-top:8px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:8px;
+	vertical-align:middle;
+	box-shadow:0px 0px 20px black;
+	margin:auto;
+	color:white;
+}
+.sndfrst
+{
+	background-color:#C3073F;
+	height:30px;
+	margin-right:5px;
+	border-radius:15px 15px 5px 15px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:3px;
+	box-shadow:0px 0px 20px black;
+	float:right;
+	clear:both;
+	display:table;
+}
+.sndfrst pre
+{
+	text-align:left; 
+	padding-top:8px;
+	padding-left:5px;
+	padding-right:5px;
+	padding-bottom:8px;
+	vertical-align:middle;
+	margin:auto;
+	color:white;
+}
+#clock
+{
+	width:260px;
+	text-align:center;
+	background-color:white;
+	box-shadow:2px 0px 20px grey;
+	border-radius:15px;
+	z-index:15;
+	display:inline-block;
+}
+#clockClose
+{
+	border:none;
+	background-color:white;
+	color:red;
+	text-shadow:2px 0px 2px grey;
+	font-size:25px;
+	height:10px;
+	outline:none;
+	margin-left:auto;
+	float:right;
+	border-radius:5px;
+	margin-right:10px;
+}
+span
+{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:Black;
+	font-size:40px;
+	text-shadow:2px 0px 3px grey;
+}
+#center
+{
+	position:absolute;
+	text-align:center;
+	width:100%;
+	display:none;
 }
