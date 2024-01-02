@@ -1,28 +1,40 @@
+<!--I can't develop this code anymore
+	because I don't get enough free time from my
+	freelancing and studies, So if anyone wants to
+	further develop this code, you may do it 
+	just mention me somewhere in your code, or DM me the link of your code, i would love to see what you added or changed-->
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Text Messagging</title>
-        <!--Developer:Vikas Tiwari-->
-    </head>
-    <body id="bd" onload="alertCommenting()">
-        
-    <div id="msgarea">
-        <div class="send">
-        <pre>What's up?</pre>
-        </div>
-        <div class="rec">
-           <pre>Coding..😁</pre>
-        </div>
-        <div class="send">
-          <pre>Ok continue..</pre>
-        </div>
-            
-    </div>
-<textarea 
-id="textbox"
-type="textArea" 
-placeholder="Type message..">
-</textarea>
-<button onclick="sendmsg1()">Send</button>
+<head>
+  <title>A.I. 2.0</title>
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">  
+  <!--Developer:Me-->
+</head>
+<body onload="loaded()">
+  <div id="msgarea">
+	<div class="snd"><pre>Hii..</pre></div>
+	<div class="rec"><pre>Type "Help" for a list of commands</pre></div>
+	<div class="snd"><pre>Okay..</pre></div>
+  </div>
+  <div id="controls">
+	<input type="text" placeholder="Type a message and press Enter/Return button.. " id="msgbox"/>
+	<!--<button onclick="sendmsg()" id="snd">Send</button>-->
+  </div>
+  
+ <div id="center">
+ <div id="clock">
+	<button id="clockClose" onclick="hideclock()">×</button>
+	<br>
+	<span id="hour">00</span>
+	<span id="minute">00</span>
+	<span id="sec">00</span> 
+	<span id="amp">PM</span><br>
+	<span id="date"></span>
+</div>
+</div>
 </body>
 </html>
